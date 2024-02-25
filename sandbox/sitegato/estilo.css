@@ -1,0 +1,41 @@
+@charset "UFT-8";
+
+body{
+    background-image: url(fotosgato/wallpaper.jpg);
+    /*background-attachment: fixed;*/
+    background-position-y: 20em;
+}
+
+header{
+    background-image: linear-gradient(to top, rgb(255, 196, 0),beige);
+    border-radius: 1em;
+    width: 1200px;
+    padding: 0.05px;
+    height: 80px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(56, 41, 21, 0.659);
+}
+
+main{
+    background-image: linear-gradient(to right, #c56a4c 1%,#d19149 ,#c56a4c 99%);
+    border-style: inset;
+    border-width: 3px;
+    border-color: #000000;
+    width: 1200px;
+    height: 3200px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr{
+    height: 10px;
+    background-color: #877833;
+}
+
+ol{
+    padding: 10px 110px;
+}
