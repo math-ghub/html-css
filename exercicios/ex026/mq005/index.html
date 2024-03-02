@@ -6,7 +6,7 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="Resized()">
     <header>
         <h1>Meu site</h1>
         <nav>
@@ -31,6 +31,15 @@
     </main>
 
     <script>
+
+        function Resized(){
+            if (window.innerWidth >= 700) {
+                Desktop.style.display = "block"
+            } else{
+                Desktop.style.display = "none"
+            }
+        }
+
         function MenuFunction(){
             if (Desktop.style.display == "none") {
                 Desktop.style.display = "flex"
