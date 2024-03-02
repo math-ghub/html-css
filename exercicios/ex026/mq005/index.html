@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <div id="Mobile">
+                <i onclick="MenuFunction()">aa</i>
+            </div>
+            <div id="Desktop">
+                <a href="#">opçao 1</a>
+                <a href="#">opçao 2</a>
+                <a href="#">opçao 3</a>
+                <a href="#">opçao 4</a>
+                <a href="#">opçao 5</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Testando Media Queries</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iusto accusamus optio tenetur vitae vero repellendus est soluta unde ullam dicta illum rerum eius ratione, nostrum enim repellat vel recusandae!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dignissimos ullam nostrum repellat placeat libero sed iste doloremque impedit molestias, pariatur ducimus cupiditate nobis vitae natus in ab officia nesciunt!</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium facilis assumenda tempora magnam quaerat accusamus! Perferendis vitae quae illo voluptatum reiciendis mollitia, tempore, dolor eos quos repellendus similique explicabo iusto.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dignissimos ullam nostrum repellat placeat libero sed iste doloremque impedit molestias, pariatur ducimus cupiditate nobis vitae natus in ab officia nesciunt!</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque harum ipsa expedita explicabo distinctio aspernatur cumque error nostrum repellat quam! Quae quaerat deserunt similique labore libero iure itaque natus a?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dignissimos ullam nostrum repellat placeat libero sed iste doloremque impedit molestias, pariatur ducimus cupiditate nobis vitae natus in ab officia nesciunt!</p><br>
+    </main>
+
+    <script>
+        function MenuFunction(){
+            if (Desktop.style.display == "none") {
+                Desktop.style.display = "flex"
+                Desktop.style["flex-direction"] = "column"
+            } else{
+                Desktop.style.display = "none"
+                Desktop.style["flex-direction"] = "none"
+            }
+        }
+    </script>
+</body>
+</html>
